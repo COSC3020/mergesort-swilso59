@@ -15,3 +15,15 @@ part of the array each recursive call considers.
 Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
+
+I think that the outer loop runs $\log_2(n)$. I think this is the case because it divides the array by 2 into smaller peices until it reaches individual elements. 
+
+For each iteration of the outer loop the inner loop goes through all pairs of adjacent subarrays and the number of comparisions and element. This seems like it is related to the size of the input array. 
+
+The merge function combines two sorted subarrays into a larger sorted array. Which also seems like it would be proportional to the size of the input subarrays.
+
+I think for the worst case. The array is arranged in a particular order (reverse?) which causes more difficulty in the sorting process and requiring more merge steps. 
+
+$\Theta \left(n\log_2(n)\right) $
+
+
